@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Noto+Serif+SC:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ffc2d1",
+                        "background-light": "#FFF0F3",
+                        "background-dark": "#230f14",
+                        "y2k-blue": "#BDE0FE",
+                        "y2k-orange": "#FFE5B4",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif-title": ["Noto Serif SC", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .pixel-grid {
+            background-image: linear-gradient(#ffc2d1 1px, transparent 1px), linear-gradient(90deg, #ffc2d1 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .hard-shadow {
+            box-shadow: 4px 4px 0px 0px #ffc2d1;
+        }
+        .s-curve-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-background-light font-display text-slate-900 min-h-screen">
+<div class="fixed inset-0 pixel-grid opacity-10 pointer-events-none"></div>
+<nav class="h-[80px] bg-white/80 backdrop-blur-md border-b-4 border-primary sticky top-0 z-50 px-8 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hard-shadow">
+<span class="material-symbols-outlined text-white">rocket_launch</span>
+</div>
+<h1 class="font-serif-title text-2xl tracking-tight text-slate-800">14天增长运营大师课</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/80 transition-all text-slate-900 px-6 py-2 rounded-full font-bold hard-shadow flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">leaderboard</span>
+                My Progress
+            </button>
+<div class="w-10 h-10 rounded-full border-2 border-primary bg-cover bg-center" data-alt="User profile avatar illustration" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcxbx5cDcN9CbU7si323l6roZGpX1a4PAZvyP40PwtWIRrdr9mS41Ckfo4uCshSUlseBhvgeLPR4WH5b8RbPcmL_Mi10dEEHRBfF_C4G6NZJXI0IuLVsBgYxU-hen1EW4AKvrR5AupXxA2zWLUwLywoME4EJtfWzsl0RnOk0D8SM18zAIdXFJioHz_rRy84L3oV5im__7En42qpRpex4XMcHW8dYsi3_3-mSMgTxO23BXa2QGuW-fV2Wq1_WJeMXX4EqThanMhsAM')"></div>
+</div>
+</nav>
+<main class="max-w-5xl mx-auto px-6 py-12 relative">
+<div class="grid grid-cols-12 gap-6 mb-16">
+<div class="col-span-8 bg-white p-8 rounded-xl hard-shadow border-2 border-primary flex items-center gap-6">
+<div class="text-6xl">🎓</div>
+<div>
+<h2 class="text-3xl font-black leading-tight mb-2">每天30分钟，<br/>掌握增长运营核心思维</h2>
+<p class="text-slate-500 font-medium">14 Days Masterclass: Y2K Growth Edition</p>
+</div>
+</div>
+<div class="col-span-4 bg-y2k-blue p-6 rounded-xl hard-shadow border-2 border-primary flex flex-col justify-center">
+<div class="flex justify-between items-end mb-3">
+<span class="font-bold text-lg">已完成 2/14 天</span>
+<span class="text-sm font-black">14%</span>
+</div>
+<div class="w-full h-6 bg-white rounded-full border-2 border-primary overflow-hidden">
+<div class="h-full bg-primary w-[14%] border-r-2 border-primary"></div>
+</div>
+<div class="mt-4 flex gap-1">
+<span class="material-symbols-outlined text-pink-500 scale-75">favorite</span>
+<span class="material-symbols-outlined text-pink-500 scale-75">favorite</span>
+<span class="material-symbols-outlined text-slate-300 scale-75">favorite</span>
+</div>
+</div>
+</div>
+<div class="relative min-h-[800px] py-20">
+<svg class="s-curve-svg" fill="none" viewbox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+<path d="M100 120 C 300 120, 700 120, 900 120 S 900 400, 900 400 S 700 400, 100 400 S 100 680, 100 680 S 300 680, 900 680" stroke="#BDE0FE" stroke-dasharray="12 8" stroke-width="4"></path>
+</svg>
+<div class="relative z-10 grid grid-cols-5 gap-y-32">
+<div class="flex flex-col items-center gap-2">
+<div class="w-20 h-20 bg-primary rounded-xl hard-shadow border-2 border-white flex flex-col items-center justify-center relative ring-4 ring-pink-200">
+<span class="material-symbols-outlined text-white text-3xl">rocket_launch</span>
+<div class="absolute -top-3 -right-3 text-xl">💖</div>
+</div>
+<span class="text-xs font-black uppercase bg-white px-2 py-1 rounded-full border border-primary">Day 1 🚀</span>
+<div class="flex gap-1 mt-1"><div class="w-2 h-2 rounded-full bg-pink-500"></div><div class="w-2 h-2 rounded-full bg-pink-500"></div><div class="w-2 h-2 rounded-full bg-pink-500"></div></div>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-20 h-20 bg-y2k-orange rounded-xl hard-shadow border-2 border-white flex flex-col items-center justify-center relative">
+<span class="material-symbols-outlined text-orange-400 text-3xl">auto_awesome</span>
+<div class="absolute -top-3 -right-3 text-xl">💖</div>
+</div>
+<span class="text-xs font-black uppercase bg-white px-2 py-1 rounded-full border border-primary">Day 2 ✨</span>
+<div class="flex gap-1 mt-1"><div class="w-2 h-2 rounded-full bg-orange-400"></div><div class="w-2 h-2 rounded-full bg-orange-400"></div><div class="w-2 h-2 rounded-full bg-slate-200"></div></div>
+</div>
+<div class="flex flex-col items-center gap-2 relative">
+<div class="w-20 h-20 bg-y2k-orange rounded-xl hard-shadow border-2 border-white flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-orange-400 text-3xl">star</span>
+</div>
+<span class="text-xs font-black uppercase bg-white px-2 py-1 rounded-full border border-primary">Day 3 🌟</span>
+<div class="flex gap-1 mt-1"><div class="w-2 h-2 rounded-full bg-slate-200"></div><div class="w-2 h-2 rounded-full bg-slate-200"></div><div class="w-2 h-2 rounded-full bg-slate-200"></div></div>
+<div class="absolute -right-16 top-0 text-2xl">🦋</div>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 4 🔒</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 5 🔒</span>
+</div>
+<div class="col-start-5 row-start-2 flex flex-col items-center gap-2 mt-8">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 6 🔒</span>
+</div>
+<div class="col-start-4 row-start-2 flex flex-col items-center gap-2 mt-8 relative">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 7 🔒</span>
+<div class="absolute -left-16 top-0 text-2xl scale-x-[-1]">🦋</div>
+</div>
+<div class="col-start-3 row-start-2 flex flex-col items-center gap-2 mt-8">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 8 🔒</span>
+</div>
+<div class="col-start-2 row-start-2 flex flex-col items-center gap-2 mt-8">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 9 🔒</span>
+</div>
+<div class="col-start-1 row-start-3 flex flex-col items-center gap-2 mt-16">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 10 🔒</span>
+</div>
+<div class="col-start-2 row-start-3 flex flex-col items-center gap-2 mt-16">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 11 🔒</span>
+</div>
+<div class="col-start-3 row-start-3 flex flex-col items-center gap-2 mt-16 relative">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 12 🔒</span>
+<div class="absolute -right-16 top-0 text-2xl">🦋</div>
+</div>
+<div class="col-start-4 row-start-3 flex flex-col items-center gap-2 mt-16">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 13 🔒</span>
+</div>
+<div class="col-start-5 row-start-3 flex flex-col items-center gap-2 mt-16">
+<div class="w-20 h-20 bg-background-light rounded-xl border-2 border-dashed border-primary flex flex-col items-center justify-center opacity-60">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+</div>
+<span class="text-xs font-black uppercase text-slate-400">Day 14 🔒</span>
+</div>
+</div>
+</div>
+<div class="mt-20 flex justify-center pb-20">
+<button class="bg-white px-10 py-4 rounded-xl border-4 border-primary hard-shadow text-xl font-black uppercase tracking-widest hover:translate-y-[-2px] active:translate-y-[2px] transition-all">
+                Continue Learning
+            </button>
+</div>
+</main>
+<div class="fixed bottom-6 right-6 flex flex-col gap-3">
+<div class="w-12 h-12 bg-white rounded-full hard-shadow border-2 border-primary flex items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined text-primary">chat_bubble</span>
+</div>
+<div class="w-12 h-12 bg-white rounded-full hard-shadow border-2 border-primary flex items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined text-primary">help</span>
+</div>
+</div>
+</body></html>
