@@ -30,7 +30,7 @@
 - 进度自动保存，随时断点续学
 - Y2K Kawaii 视觉风格，让运营学习不再枯燥
 
-**实践导向，服务于运营实战**
+**实践导向，服务运营实战**
 
 - 每个单元课后设有互动练习和思考问题（如：画出你的 AARRR 漏斗、为瓶颈层设计改进方案）
 - 提供结构化笔记模板和输出框架，学完即可产出可用的分析文档
@@ -38,7 +38,7 @@
 
 ## 我的工作流
 
-这个项目使用 [Stitch](https://www.stitch.design/) 设计网页视觉，再通过 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 完成开发实现。Stitch 负责界面设计和视觉定稿，Claude Code 负责将设计转化为可运行的前端代码并迭代优化。
+这个项目使用 [Stitch](https://www.stitch.design/) 设计网页视觉，再通过 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 完成开发实现。
 
 ## 如何使用
 
@@ -75,4 +75,4 @@ content/        → 结构化课程数据
 
 ---
 
-*Built with Stitch + Claude Code | Vibe Coding*
+*Built with Vibe Coding*
