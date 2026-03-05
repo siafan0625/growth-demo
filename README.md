@@ -17,6 +17,29 @@
 
 适合增长、运营方向的行业新人学习使用。
 
+## 作品亮点
+
+**精选内容来源**
+
+课程素材精选自国内外增长/运营领域口碑最好的内容来源——AARRR 万能公式长文、Lenny's Newsletter 的多邻国增长案例（Jorge Mazal 原文中英对照）、First Round Review 的 PMF 层级框架。不是随意拼凑，而是挑选了从业者公认最值得读的一手资料。
+
+**学习体验参考多邻国等产品 Best Practice**
+
+- 每天开头是「新内容总结 + 旧内容回顾」，先用速览建立框架，再深入详读原文
+- 支持「速览」和「详读」双模式切换，适配不同学习节奏
+- 进度自动保存，随时断点续学
+- Y2K Kawaii 视觉风格，让运营学习不再枯燥
+
+**实践导向，服务于运营实战**
+
+- 每个单元课后设有互动练习和思考问题（如：画出你的 AARRR 漏斗、为瓶颈层设计改进方案）
+- 提供结构化笔记模板和输出框架，学完即可产出可用的分析文档
+- Day 4 设置课程总结与综合复盘，串联 4 天知识体系
+
+## 我的工作流
+
+这个项目使用 [Stitch](https://www.stitch.design/) 设计网页视觉，再通过 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 完成开发实现。Stitch 负责界面设计和视觉定稿，Claude Code 负责将设计转化为可运行的前端代码并迭代优化。
+
 ## 如何使用
 
 1. 打开 [在线地址](https://siafan0625.github.io/growth-demo/)，进入首页
@@ -52,4 +75,4 @@ content/        → 结构化课程数据
 
 ---
 
-*Built with Vibe Coding*
+*Built with Stitch + Claude Code | Vibe Coding*
